@@ -1,5 +1,7 @@
 # aws-mongo-backups
-
+Mongo Backup docker that links to a mongo docker and will upload backups to S3 Bucket.
+Also implemented a list script and a restore script that use the S3 Bucket.
+Built off of [agmangas/mongo-backup-s3](https://github.com/agmangas/mongo-backup-s3).
 ### Run Mongo Database
 docker run -d --name <mongo_container_name> -p 27017:271017 mongo
 
